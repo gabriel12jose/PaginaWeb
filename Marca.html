@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Marca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Asegúrate de tener este archivo -->
+    <style>
+        #marca {
+            background-color: #f0f0f0; /* Color de fondo sólido */
+            color: #333; /* Color del texto para mejor contraste */
+            padding: 60px 0;
+        }
+        .icono {
+            font-size: 50px;
+            color: #ffd700;
+        }
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .w3-opacity:hover {
+            opacity: 0.7 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="index.html" class="w3-bar-item w3-button">Inicio</a>
+                <a href="Nosotros.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Nosotros</a>
+                <a href="Marca.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Marca</a>
+                <a href="Ventas.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Instrumentos</a>
+                <a href="Otros.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Otros</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Inicio</a>
+        <a href="Nosotros.html" onclick="w3_close()" class="w3-bar-item w3-button">Nosotros</a>
+        <a href="Marca.html" onclick="w3_close()" class="w3-bar-item w3-button">Marca</a>
+        <a href="Ventas.html" onclick="w3_close()" class="w3-bar-item w3-button">Ventas</a>
+        <a href="Otros.html" onclick="w3_close()" class="w3-bar-item w3-button">Otros</a>
+    </nav>
+
+    <!-- Sección Nuestra Marca -->
+    <section class="w3-container" id="marca">
+        <div class="container">
+            <h2 class="w3-center">Nuestra Marca</h2>
+            <p class="w3-center w3-large">Descubre lo que nos hace únicos en el mundo de la música.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/GuitarraPublicidad.jpg" alt="Imagen de la Marca" class="img-fluid w3-opacity w3-hover-opacity">
+                </div>
+                <div class="col-md-6">
+                    <h3>¿Quiénes Somos?</h3>
+                    <p class="w3-justify">Nuestra marca se fundamenta en la <span class="highlight">pasión por la música</span> y en la dedicación a ofrecer solo los mejores instrumentos y accesorios. Desde nuestros inicios, hemos trabajado para ser más que una simple tienda; somos un lugar donde los músicos encuentran inspiración, calidad, y una comunidad que comparte su amor por la música.</p>
+                    
+                    <h3>Nuestros Valores</h3>
+                    <ul class="w3-ul">
+                        <li><i class="fas fa-music icono"></i> <strong>Pasión por la Música:</strong> Vivimos y respiramos música todos los días.</li>
+                        <li><i class="fas fa-guitar icono"></i> <strong>Compromiso con la Calidad:</strong> Solo lo mejor para nuestros clientes.</li>
+                        <li><i class="fas fa-heart icono"></i> <strong>Atención al Cliente:</strong> Tus necesidades son nuestra prioridad.</li>
+                        <li><i class="fas fa-book icono"></i> <strong>Educación y Desarrollo:</strong> Apoyamos tu crecimiento musical.</li>
+                        <li><i class="fas fa-lightbulb icono"></i> <strong>Innovación:</strong> Siempre a la vanguardia de las tendencias.</li>
+                        <li><i class="fas fa-leaf icono"></i> <strong>Sostenibilidad:</strong> Comprometidos con el medio ambiente.</li>
+                        <li><i class="fas fa-users icono"></i> <strong>Comunidad y Colaboración:</strong> Juntos creamos un entorno inclusivo y creativo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="Marca.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Regresar al principio</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fab fa-facebook-official w3-hover-opacity"></i>
+            <i class="fab fa-instagram w3-hover-opacity"></i>
+            <i class="fab fa-snapchat w3-hover-opacity"></i>
+            <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fab fa-twitter w3-hover-opacity"></i>
+            <i class="fab fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Todos los derechos reservados <a href="https://youtube.com/@gab.romero?si=cafo2lPv5Kv0_AQQ" title="Youtube" target="_blank" class="w3-hover-text-green">José Gabriel Amador Romero</a></p>
+    </footer>
+</body>
+</html>

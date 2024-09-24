@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Inicio</a>
+      <a href="Nosotros.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Nosotros</a>
+      <a href="Marca.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Marca</a>
+      <a href="Ventas.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Instrumentos</a>
+      <a href="Otros.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Otros</a>
+    </div>
+
+
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Nosotros</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Marca</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Ventas</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Otros</a>
+</nav>
+
+<!-- Carrusel -->
+<div id="carouselNosotros" class="carousel slide w3-container w3-padding-64" data-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="slides/banner3.jpg" class="d-block w-100" alt="Imagen 1">
+          <div class="carousel-caption">
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="slides/banner1.png" class="d-block w-100" alt="Imagen 2">
+          <div class="carousel-caption">
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="slides/banner2.png" class="d-block w-100" alt="Imagen 3">
+          <div class="carousel-caption">
+          </div>
+      </div>
+  </div>
+  <!-- Controles del Carrusel -->
+  <a class="carousel-control-prev" href="#carouselNosotros" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselNosotros" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+
+<!-- Sección Nosotros -->
+<section class="w3-container w3-padding-64 bg-light" id="nosotros">
+    <div class="container">
+        <h2 class="w3-center">Nosotros</h2>
+        <p class="w3-center w3-large">Conoce mas acerca de nosotros, nuestra misión, visión y nuestros valores.</p>
+        
+        <div class="row w3-padding-32">
+            <div class="col-md-4 w3-center">
+                <img src="img/mision.jpg" alt="Misión" class="w3-circle w3-hover-opacity" style="width: 150px;">
+                <h3>Misión</h3>
+                <p class="w3-justify">Nuestra misión es inspirar la creatividad y la pasión por la música en personas de todas las edades y niveles, proporcionando una amplia gama de instrumentos musicales de alta calidad, accesorios y servicios relacionados. Nos esforzamos por ser el destino preferido para músicos, educadores y entusiastas, ofreciendo no solo productos excepcionales, sino también un servicio al cliente inigualable, asesoramiento experto y un ambiente que fomenta el desarrollo musical y el disfrute del arte sonoro. Creemos en el poder transformador de la música y estamos comprometidos a apoyar a nuestros clientes en cada paso de su viaje musical.</p>
+            </div>
+            <div class="col-md-4 w3-center">
+                <img src="img/mission-1.jpeg" alt="Visión" class="w3-circle w3-hover-opacity" style="width: 150px;">
+                <h3>Visión</h3>
+                <p class="w3-justify">Nuestra visión es convertirnos en líderes globales en la industria de instrumentos musicales, siendo reconocidos no solo por la calidad y diversidad de nuestros productos, sino también por nuestra dedicación a la educación musical y el apoyo a la comunidad artística. Aspiramos a ser una fuente de inspiración para músicos de todas las edades y habilidades, fomentando un entorno donde la música se convierta en un puente para la creatividad, la innovación y la conexión humana. Nos comprometemos a estar a la vanguardia de las tendencias musicales, integrando nuevas tecnologías y prácticas sostenibles para ofrecer experiencias únicas que enriquezcan la vida de nuestros clientes y de la sociedad en general.</p>
+            </div>
+            <div class="col-md-4 w3-center">
+                <img src="img/Valores.png" alt="Valores" class="w3-circle w3-hover-opacity" style="width: 150px;">
+                <h3>Valores</h3>
+                <p class="w3-justify">Pasión por la música, compromiso con la calidad, atención al cliente, educación y desarrollo, innovación, sostenibilidad, comunidad y colaboración.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS y dependencias -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="Nosotros.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Regresar al principio</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook-official w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Todos los derechos reservados <a href="https://youtube.com/@gab.romero?si=cafo2lPv5Kv0_AQQ" title="Youtube" target="_blank" class="w3-hover-text-green">José Gabriel Amador Romero</a></p>
+</footer>
+ 
+
+</body>
+</html>
